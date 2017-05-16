@@ -101,7 +101,6 @@ environments:
 
 ---
 hibernate:
-    dialect: "org.hibernate.dialect.PostgreSQL94Dialect"
     cache:
         queries: false
         use_second_level_cache: true
@@ -109,6 +108,7 @@ hibernate:
         region.factory_class: org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
 
 dataSource:
+    dialect: "org.hibernate.dialect.PostgreSQL94Dialect"
     pooled: true
     jmxExport: true
     driverClassName: org.postgresql.Driver
