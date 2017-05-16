@@ -2,10 +2,10 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      chmod +x gradlew
+      chmod +x grailsw
   build:
     commands:
-      ./gradlew -Dgrails.env=PRODUCTION clean war
+      ./grailsw clean && ./grailsw war
 
 artifacts:
   type: zip
