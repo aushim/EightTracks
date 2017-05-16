@@ -5,7 +5,7 @@ phases:
       chmod +x gradlew
   build:
     commands:
-      ./gradlew -Dgrails.env=prod clean war
+      ./gradlew -Dgrails.env=PRODUCTION clean war
 
 artifacts:
   type: zip
