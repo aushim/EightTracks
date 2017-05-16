@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      chmod +x gradlew
+  build:
+    commands:
+      ./gradlew -Dgrails.env=prod clean war
+
+artifacts:
+  type: zip
+  files:
+    - build/libs/EightTracks.war
