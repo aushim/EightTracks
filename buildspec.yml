@@ -10,4 +10,5 @@ phases:
 artifacts:
   type: zip
   files:
-    - build/libs/EightTracks.war
+    - build/libs/ROOT.war
+  discard-paths: yes
