@@ -6,9 +6,10 @@ phases:
   build:
     commands:
       ./grailsw clean && ./grailsw war
+      touch build/libs/dummy.war
 
 artifacts:
   type: zip
   files:
-    - build/libs/ROOT.war
+    - build/libs/*.war
   discard-paths: yes
