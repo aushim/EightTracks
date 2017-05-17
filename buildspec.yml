@@ -5,8 +5,7 @@ phases:
       chmod +x grailsw
   build:
     commands:
-      ./grailsw clean && ./grailsw war
-      touch build/libs/dummy.war
+      ./grailsw clean && ./grailsw war && touch build/libs/dummy.war
 
 artifacts:
   type: zip
